@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow, noarchive"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; script-src 'sha256-/vhRKvn6ttsw0hj9PC4rKOO2GM16xN15gs3swnYn05E=' 'sha256-KCZtT/oyRdtkusnpK83H3SVT1Bc7i5HkGUzTZ1Zz6Hc='; style-src 'sha256-4/7PrQwJByCw1xcAyCN8SFceiQitBNQ6br3OI2TYvE0='"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex, nofollow, noarchive"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Software for contractors | CrewRooster</title><script>(function(){try{var t=localStorage.getItem('cr-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}})()</script><style>/* CrewRooster "glass" theme. Original design: dark smoked glass over a warm backdrop, orange accent.
    Everything is driven by the tokens below, so the main app can reuse this file as is.
    Rule of thumb: glass is for surfaces, never for text. Text stays bright and at least 15px. */
@@ -216,10 +216,15 @@ a.who{color:var(--ink);text-decoration:none}a.who:hover{text-decoration:underlin
 /* Weather line on the dashboard */
 a.wx-strip{display:block;text-decoration:none;color:inherit;margin-bottom:14px}
 a.wx-strip:hover{border-color:var(--edge-strong)}
-</style></head><body class="">
+
+.skip-link{position:fixed;top:12px;left:12px;z-index:100;padding:12px 16px;
+  background:var(--bg);color:var(--ink);transform:translateY(calc(-100% - 16px))}
+.skip-link:focus{transform:none;outline:2px solid currentColor;outline-offset:2px}
+#main-content{scroll-margin-top:8rem}
+</style></head><body class=""><a class="skip-link" href="#main-content">Skip to content</a>
 <div class="backdrop" aria-hidden="true"></div>
 <header class="top"><a class="brand" href="index.html"><i aria-hidden="true">C</i>CrewRooster</a><span class="spacer"></span><button class="plain icon" id="theme" type="button" aria-label="Switch between dark and light" title="Dark or light">&#9680;</button><a class="btn small" href="mailto:dave@crewrooster.com?subject=CrewRooster%20early%20access">Request early access</a></header>
-<main>
+<main id="main-content" tabindex="-1">
 <section class="hero"><p class="pill">For contractors and home service businesses</p>
 <h1>Run the crew. Win the job. Skip the paperwork.</h1>
 <p class="lead">CrewRooster gives your business a website, a place for every job request, texting with your customers, and a clear view of where the work is coming from.</p>
@@ -233,7 +238,7 @@ a.wx-strip:hover{border-color:var(--edge-strong)}
 <div class="box"><h2>Add The Full Coop</h2><div class="big">$499.00 once, then $69.00 a month</div>
 <p class="muted">Your first month is included in the one-time fee, so the monthly fee starts in your second month.</p>
 <p class="muted">A website designed for you, on your own domain, with a business email address. Extra email addresses are $15.00 a month each.</p></div></div></section>
-<section class="box"><h2>Common questions</h2><details class="mail"><summary>Is the price in Canadian or U.S. dollars?</summary><p class="muted">Canadian dollars in Canada and U.S. dollars in the United States. The number is the same in both.</p></details><details class="mail"><summary>What counts as a user?</summary><p class="muted">Anyone on your team who signs in: you, office staff, sales and service. You can add or remove people yourself.</p></details><details class="mail"><summary>Do I need to know anything about websites?</summary><p class="muted">No. Your site is live as soon as you sign up, written for your trade. You change what you want from a simple editor.</p></details><details class="mail"><summary>How does texting work?</summary><p class="muted">It is an optional $10.00 a month. You get a business number and 250 texts a month. Texts you send and texts you receive both count. After that, texts are 5 cents each.</p></details><details class="mail"><summary>Can I cancel?</summary><p class="muted">Yes, any time, from your dashboard. Your account keeps working until the end of the month you have paid for. Nothing is deleted.</p></details></section>
+<section class="box"><h2>Common questions</h2><details class="mail"><summary>Is the price in Canadian or U.S. dollars?</summary><p class="muted">Canadian dollars in Canada and U.S. dollars in the United States. The number is the same in both.</p></details><details class="mail"><summary>What counts as a user?</summary><p class="muted">Anyone on your team who signs in: you, office staff, sales and service. You can add or remove people yourself.</p></details><details class="mail"><summary>Do I need to know anything about websites?</summary><p class="muted">No. Your site is live as soon as you sign up, written for your trade. You change what you want from a simple editor.</p></details><details class="mail"><summary>How does texting work?</summary><p class="muted">It is an optional $10.00 a month. You get a business number and 250 texts a month. Texts you send and texts you receive both count. If you go past 250 in a month, your card is charged $10.00 for extra texts, which are used at 5 cents each. Whatever is left of that $10.00 carries over to later months.</p></details><details class="mail"><summary>Can I cancel?</summary><p class="muted">Yes, any time, from your dashboard. Your account keeps working until the end of the month you have paid for. Nothing is deleted.</p></details></section>
 <section class="hero small"><h1>Opening soon</h1><p class="lead">CrewRooster is opening to its first contractors soon. Write to dave@crewrooster.com and we will be in touch.</p>
 <div class="row center"><a class="btn" href="mailto:dave@crewrooster.com?subject=CrewRooster%20early%20access">Request early access</a></div></section>
 <footer class="foot"><a href="index.html#pricing">Pricing</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="texting-terms.html">Texting terms</a><a href="mailto:dave@crewrooster.com">dave@crewrooster.com</a><span class="muted">CrewRooster, London, Ontario, Canada</span></footer></main><script>document.getElementById('theme').addEventListener('click',function(){var r=document.documentElement,t=r.dataset.theme==='light'?'dark':'light';r.dataset.theme=t;try{localStorage.setItem('cr-theme',t)}catch(e){}})</script></body></html>
